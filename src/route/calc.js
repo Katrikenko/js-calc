@@ -16,7 +16,7 @@ router.get('/', function (req, res) {
     // вказуємо назву контейнера
     name: 'calc',
     // вказуємо назву компонентів
-    component: [''],
+    component: [],
 
     // вказуємо назву сторінки
     title: 'Calculator',

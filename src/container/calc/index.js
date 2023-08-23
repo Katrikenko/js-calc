@@ -63,6 +63,13 @@ class Calc {
     this.#output()
   }
 
+  static backspace = () => {
+    if (this.#value.length > 0) {
+      this.#value = this.#value.slice(0, -1)
+      this.#output()
+    }
+  }
+
   static #save = () => {
     window.localStorage.setItem(this.#NAME, this.#value)
   }
